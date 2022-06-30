@@ -1,0 +1,129 @@
+body
+{
+    background-color: whitesmoke;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav
+{
+    background-color: #3c5c55;
+    width: 100%;
+    color: white;
+    top: -50px;
+    transition: 0.3s;
+}
+
+nav ul
+{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+nav li
+{
+    list-style-type: none;
+    float: left;
+}
+
+nav a
+{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 30px;
+    color: white;
+}
+
+.menu :hover
+{
+    background-color: #417267;
+    transition: ease;
+    transition-duration: 0.2s;
+}
+
+
+div
+{
+    background-color: #272727;
+    margin-left: 7px;
+    margin-right: 1000px;
+    color: white;
+    align-content: left;
+    border-radius: 7px;
+    margin-top: 7px;
+    padding-left: 7px;
+    padding-top: 0.5px;
+    padding-bottom: 5px;
+}
+
+#search
+{
+    border-radius: 4px;
+    margin-top: 20px;
+    padding-top: 5px;
+    text-align: left;
+    border: none;
+}
+
+#button
+{
+    background-color: transparent;
+    border-color: black;
+    color: whitesmoke;
+    margin-top: 19.5px;
+    margin-left: 4px;
+    cursor: pointer;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#buttonSearch :hover
+{
+    background-color: #417267;
+}
+
+@media screen and (max-device-width: 480px) {
+    nav{
+        font-size: 1.9em;
+    }
+
+    #search{
+        font-size: 0.6em;
+    }
+
+    #button
+    {
+        font-size: 0.6em;
+    }
+
+    #info {
+        font-size: 2em;
+    }
+
+    div {
+        background-color: transparent;
+        color: black;
+    }
+
+    audio {
+        font-size: 2em;
+        
+    }
+
+    h2 {
+        text-align: left;
+        font-size: 3em;
+       
+        color: black;
+    }}
+
+
+    .safe
+    {
+        visibility: hidden;
+    }
+
+    
