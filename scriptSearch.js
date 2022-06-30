@@ -48,5 +48,11 @@ function ouvrirPage() {
         location.replace("rickroll.html");
     }
 
-    
+    if (a === "naps") {
+        location.replace("naps.html");
+    }
+
+    if (a === "Naps") {
+        location.replace("naps.html");
+    }
 }

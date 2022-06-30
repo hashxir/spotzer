@@ -16,6 +16,8 @@ var fixette = document.getElementById("fixette");
 
 var gallerie = document.getElementById("galerie");
 
+var kiffance = document.getElementById("kiffance");
+
 
 
 gazo.addEventListener("click", () =>{
@@ -60,3 +62,6 @@ jefe.addEventListener("ended", () => {
     vvs.play();
 });
 
+vvs.addEventListener("ended", () => {
+    kiffance.play();
+});
