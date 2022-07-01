@@ -87,16 +87,29 @@ div
 
 @media screen and (max-device-width: 480px) {
     nav{
-        font-size: 1.9em;
+        font-size: 2.135em;
     }
 
+    body 
+    {
+        background-image: url("logo.png");
+        background-repeat: no-repeat;
+        background-color: #46ad22;
+        background-size: 100%;
+        background-position-y: 30%;
+        background-attachment: fixed;
+        
+    }
+    
+
     #search{
-        font-size: 0.6em;
+        font-size: 0.95em;
+        margin-bottom: 7px;
     }
 
     #button
     {
-        font-size: 0.6em;
+        font-size: 0.95em;
     }
 
     #info {
@@ -106,11 +119,32 @@ div
     div {
         background-color: transparent;
         color: black;
+        font-size: 1em;
     }
 
     audio {
-        font-size: 2em;
+        width: 25em;
         
+    }
+
+    
+
+    #logo {
+        visibility: hidden;
+        
+    }
+
+    h3 {
+        font-size: 2.4em;
+        
+    }
+
+    p {
+        font-size: 2.5em;
+    }
+
+    h1 {
+        font-size: 4em;
     }
 
     h2 {
@@ -124,6 +158,12 @@ div
     .safe
     {
         visibility: hidden;
+    }
+
+    #logo
+    {
+        margin-left: 400px;
+        width: 27%;
     }
 
     
