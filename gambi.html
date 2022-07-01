@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>spotzer</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+<nav>
+    <ul>
+        <li class="menu"><a href="index.html">Accueil</a></li>
+        <li class="menu"><a href="musique.html">Les musiques disponibles</a></li>
+        <li class="menu"><a href="contact.html">Vos idées</a></li>
+        <li class="menu"><a href="what.html">C'est quoi ?</a></li>
+        <li class=""> <input type="search" id="search" value="" onchange="ouvrirPage()" placeholder="Rechercher"></li>
+        <li class=""> <input type="button" id="button" onclick="ouvrirPage()" value="Chercher"></li>
+    </ul>
+</nav>
+<h1>Résultats pour "Gambi"</h1>
+<div>
+    <h2>Dans l'espace<br>Gambi</h2>
+    <audio src="espace.mp3" controls="controls" id="espace"></audio>
+</div>
+
+<div>
+    <h2>Heho<br>Gambi</h2>
+    <audio src="heho.mp3" controls="controls" id="heho"></audio>
+</div>
+
+<script>
+    
+    var heho = document.getElementById("heho");
+
+    var espace = document.getElementById("espace");
+
+    espace.addEventListener("ended", () => {
+    heho.play();
+    });
+
+    heho.addEventListener("ended", () => {
+    alert('fin des musiques pour "Gambi"');
+    });
+</script>
+
+
+<script src="scriptSearch.js"></script>
+</body>
+</html>

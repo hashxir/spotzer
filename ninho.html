@@ -11,20 +11,45 @@
         <li class="menu"><a href="index.html">Accueil</a></li>
         <li class="menu"><a href="musique.html">Les musiques disponibles</a></li>
         <li class="menu"><a href="contact.html">Vos idées</a></li>
+        <li class="menu"><a href="what.html">C'est quoi ?</a></li>
         <li class=""> <input type="search" id="search" value="" onchange="ouvrirPage()" placeholder="Rechercher"></li>
         <li class=""> <input type="button" id="button" onclick="ouvrirPage()" value="Chercher"></li>
     </ul>
 </nav>
 <h1>Résultats pour "Ninho"</h1>
-<div id="jefe">
+<div>
     <h2>Jefe<br>Ninho</h2>
-    <audio src="jefe.mp3" controls="controls"></audio>
+    <audio src="jefe.mp3" controls="controls" id="jefe"></audio>
 </div>
 
 <div id="vvs">
     <h2>VVS<br>Ninho</h2>
-    <audio src="VVS.mp3" controls="controls"></audio>
+    <audio src="VVS.mp3" controls="controls" id="vvs"></audio>
 </div>
+
+
+
+<script>
+    var jefe = document.getElementById("jefe");
+
+    var vvs = document.getElementById("vvs");
+
+  
+
+    jefe.addEventListener("ended", () => {
+    vvs.play();
+    });
+
+    vvs.addEventListener("ended", () => {
+    
+    alert('fin des musiques pour "Ninho"');
+    jefe.play();
+        });
+
+    
+</script>
+
+
 <script src="scriptSearch.js"></script>
 </body>
 </html>

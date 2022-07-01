@@ -18,6 +18,18 @@ var gallerie = document.getElementById("galerie");
 
 var kiffance = document.getElementById("kiffance");
 
+var heho = document.getElementById("heho");
+
+var macarena = document.getElementById("macarena");
+
+var espace = document.getElementById("macarena");
+
+var espace = document.getElementById("espace");
+
+var best = document.getElementById("best");
+
+var suave = document.getElementById("suave");
+
 
 
 gazo.addEventListener("click", () =>{
@@ -64,4 +76,33 @@ jefe.addEventListener("ended", () => {
 
 vvs.addEventListener("ended", () => {
     kiffance.play();
+});
+
+gazo.addEventListener("ended", () => {
+    heho.play();
+});
+
+kiffance.addEventListener("ended", () => {
+    heho.play();
+});
+
+heho.addEventListener("ended", () => {
+    macarena.play();
+});
+
+macarena.addEventListener("ended", () => {
+    espace.play();
+});
+
+espace.addEventListener("ended", () => {
+    best.play();
+});
+
+best.addEventListener("ended", () => {
+    suave.play();
+});
+
+//fin de la boucle
+suave.addEventListener("ended", () => {
+    selecao.play();
 });

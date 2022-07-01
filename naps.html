@@ -11,6 +11,7 @@
         <li class="menu"><a href="index.html">Accueil</a></li>
         <li class="menu"><a href="musique.html">Les musiques disponibles</a></li>
         <li class="menu"><a href="contact.html">Vos idées</a></li>
+        <li class="menu"><a href="what.html">C'est quoi ?</a></li>
         <li class=""> <input type="search" id="search" value="" onchange="ouvrirPage()" placeholder="Rechercher"></li>
         <li class=""> <input type="button" id="button" onclick="ouvrirPage()" value="Chercher"></li>
     </ul>
@@ -18,8 +19,29 @@
 <h1>Résultats pour "Naps"</h1>
 <div id="kiffance">
     <h2>La kiffance<br>Naps</h2>
-    <audio src="kiffance.mp3" controls="controls"></audio>
+    <audio src="kiffance.mp3" controls="controls" id="kiff"></audio>
 </div>
+
+<div>
+    <h2>Best Life<br>Naps ft Gim's</h2>
+    <audio src="bestlife.mp3" controls="controls" id="best"></audio>
+</div>
+
+<script>
+    
+    var kiffance = document.getElementById("kiffance");
+
+    var best = document.getElementById("best");
+
+    kiffance.addEventListener("ended", () => {
+    best.play();
+    });
+
+    best.addEventListener("ended", () => {
+    alert('fin des musiques pour "Naps"');
+    kiffance.play();
+    });
+</script>
 
 <script src="scriptSearch.js"></script>
 </body>

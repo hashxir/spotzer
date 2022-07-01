@@ -11,25 +11,47 @@
         <li class="menu"><a href="index.html">Accueil</a></li>
         <li class="menu"><a href="musique.html">Les musiques disponibles</a></li>
         <li class="menu"><a href="contact.html">Vos idées</a></li>
+        <li class="menu"><a href="what.html">C'est quoi ?</a></li>
         <li class=""> <input type="search" id="search" value="" onchange="ouvrirPage()" placeholder="Rechercher"></li>
         <li class=""> <input type="button" id="button" onclick="ouvrirPage()" value="Chercher"></li>
     </ul>
 </nav>
 <h1>Résultats pour "Ziak"</h1>
-<div id="fixette">
+<div>
     <h2>Fixette<br>Ziak</h2>
-    <audio src="fixette.mp3" controls="controls"></audio>
+    <audio src="fixette.mp3" controls="controls" id="fixette"></audio>
 </div>
 
-<div id="galerie">
+<div>
     <h2>Gallerie<br>Ziak</h2>
-    <audio src="galerie.mp3" controls="controls"></audio>
+    <audio src="galerie.mp3" controls="controls" id="gallerie"></audio>
 </div>
 
-<div id="doubledash">
+<div>
     <h2>Double Dash<br>Ziak</h2>
-    <audio src="doubled.mp3" controls="controls"></audio>
+    <audio src="doubled.mp3" controls="controls" id="doubleD"></audio>
 </div>
+
+<script>
+    var doubled = document.getElementById("doubleD");
+
+    var galerie = document.getElementById("gallerie");
+
+    var fixette = document.getElementById("fixette");
+
+    fixette.addEventListener("ended", () => {
+    gallerie.play();
+});
+
+gallerie.addEventListener("ended", () => {
+    doubled.play();
+});
+
+doubled.addEventListener("ended", () => {
+    fixette.play();
+    alert('fin des musiques pour "Ziak"')
+});
+</script>
 <script src="scriptSearch.js"></script>
 </body>
 </html>
