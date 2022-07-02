@@ -9,7 +9,7 @@ body
 
 nav
 {
-    background-color: #3c5c55;
+    background-color: #259700;
     width: 100%;
     color: white;
     top: -50px;
@@ -39,7 +39,7 @@ nav a
 
 .menu :hover
 {
-    background-color: #417267;
+    background-color: #2CB400;
     transition: ease;
     transition-duration: 0.2s;
 }
@@ -47,7 +47,7 @@ nav a
 
 div
 {
-    background-color: #272727;
+    background-color: #196700;
     margin-left: 7px;
     margin-right: 1000px;
     color: white;
@@ -96,7 +96,7 @@ div
         background-repeat: no-repeat;
         background-color: #46ad22;
         background-size: 100%;
-        background-position-y: 30%;
+        background-position-y: 40%;
         background-attachment: fixed;
         
     }
