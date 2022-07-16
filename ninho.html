@@ -23,9 +23,14 @@
     <audio src="jefe.mp3" controls="controls" id="jefe"></audio>
 </div>
 
-<div id="vvs">
+<div>
     <h2>VVS<br>Ninho</h2>
     <audio src="VVS.mp3" controls="controls" id="vvs"></audio>
+</div>
+
+<div>
+    <h2>La vie qu'on mène<br>Ninho</h2>
+    <audio src="vie.mp3" controls="controls" id="vie"></audio>
 </div>
 
 
@@ -35,6 +40,8 @@
 
     var vvs = document.getElementById("vvs");
 
+    var vie = document.getElementById("vie");
+
   
 
     jefe.addEventListener("ended", () => {
@@ -42,6 +49,10 @@
     });
 
     vvs.addEventListener("ended", () => {
+    vie.play();
+    });
+
+    vie.addEventListener("ended", () => {
     
     alert('fin des musiques pour "Ninho"');
     jefe.play();

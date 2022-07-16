@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>spotzer</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/jpg" href="logo.png">
+</head>
+<body>
+<nav>
+    <ul>
+        <li class="menu"><a href="index.html">Accueil</a></li>
+        <li class="menu"><a href="musique.html">Les musiques disponibles</a></li>
+        <li class="menu"><a href="contact.html">Vos idées</a></li>
+        <li class="menu"><a href="what.html">C'est quoi ?</a></li>
+        <li class=""> <input type="search" id="search" value="" onchange="ouvrirPage()" placeholder="Rechercher"></li>
+        <li class=""> <input type="button" id="button" onclick="ouvrirPage()" value="Chercher"></li>
+    </ul>
+</nav>
+<h1>Résultats pour "Kate Brush"</h1>
+<div>
+    <h2>Running Up That Hill<br>Kate Brush</h2>
+    <audio src="st.mp3" controls="controls" id="st"></audio>
+</div>
+
+
+<script>
+    var st = document.getElementById("st");
+
+
+st.addEventListener("ended", () => {
+    alert('fin des musiques pour "Kate Brush"')
+});
+</script>
+<script src="scriptSearch.js"></script>
+</body>
+</html>

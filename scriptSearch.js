@@ -99,6 +99,21 @@ function ouvrirPage() {
     if (a === "Soolking") {
         location.replace("soolking.html");
     } 
+
+    if (a === "Kate Brush") {
+        location.replace("kate.html");
+    }
+
+    if (a === "kate brush") {
+        location.replace("kate.html");
+    }
     
+    if (a === "Oboy") {
+        location.replace("oboy.html");
+    }
+
+    if (a === "oboy") {
+        location.replace("oboy.html");
+    }
 
 }
